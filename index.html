@@ -31,7 +31,10 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2">
-                    <a class="btn btn-lg btn-info mt-4" type="submit" href="#reserveForm">Reserve Campsite</a>
+                    <a href="#reserveForm" class="btn btn-lg btn-info mt-4 text-nowrap" type="submit" 
+                        data-toggle="tooltip" title="Or call us at <br/><strong> 1-206-555-1234<strong>"
+                        data-html="true" data-placement="bottom">
+                    Reserve Campsite</a>
 
                 </div>
             </div>
@@ -41,7 +44,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"> <img src="img/logo.png" height="30" width="30" /> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -118,9 +121,9 @@
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="form-group row">
-                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                <label for="numCampers" class="col-form-label col-sm-6">Number of Campers</label>
                                 <div class="col">
-                                    <select class="form-control" name="numCampers" id="numCampers">
+                                    <select name="numCampers" id="numCampers" class="form-control">
                                         <option selected>Select</option>
                                         <option value="1"></option>
                                         <option value="2"></option>
@@ -142,7 +145,6 @@
                                 <div class="col">
                                     <button class="btn btn-primary" type="submit">Search</button>
                                 </div>
-
                             </div>
                         </form>
                     </div>
@@ -190,6 +192,11 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </body>
 
