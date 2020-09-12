@@ -53,7 +53,7 @@
             </div>
         </div>
     </nav>
-
+<!------------breadcrumbs----------------------------------------------------------------------->
     <div class="container">
         <div class="row">
             <div class="col">
@@ -76,6 +76,7 @@
                     campsite to make sure that they are up to our standards. We also present a platform for campers to
                     share reviews on campsites they have visited with each other.</p>
             </div>
+<!------------info card/table----------------------------------------------------------------------->
             <div class="col-sm-6">
                 <div class="card">
                     <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
@@ -93,6 +94,7 @@
                     </div>
                 </div>
             </div>
+<!------------blockquote----------------------------------------------------------------------->
             <div class="col">
                 <div class="card bg-light mt-3">
                     <blockquote class="blockquote card-body">
@@ -111,6 +113,7 @@
         <div class="row row-content">
             <div class="col">
                 <h3>Community Partners</h3>
+<!------------Accordion----------------------------------------------------------------------->                
                 <div id="accordion">
                     <div class="card">
                         <div role="tab" class="card-header">
@@ -180,7 +183,7 @@
                 </div>
             </div>
         </div>
-
+<!------------Responsive table/ striped----------------------------------------------------------------------->
         <div class="row row-content">
             <div class="col-sm-9">
                 <h2>Facts &amp; Figures</h2>
@@ -253,10 +256,16 @@
         </div>
     </footer>
 
-
+    <!--jq must come first, then popper.js, the BS java plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </body>
 
